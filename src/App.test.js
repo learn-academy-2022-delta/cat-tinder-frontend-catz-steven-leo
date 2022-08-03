@@ -13,6 +13,7 @@ import App from './App'
 //Allows us to utilize the adapter we import in earlier, allowing us to call and render a component.
 Enzyme.configure({adapter: new Adapter()})
 
+<<<<<<< HEAD
 
 // describe("When App renders", ()=> {
 //   it("displays a Header and a Footer", ()=> {
@@ -58,4 +59,5 @@ describe("When App renders", ()=> {
     const renderedHomeRoute = renderedApp.find("[path='/']")
     expect (renderedHomeRoute.length).toEqual(1)
   })
+
 })
