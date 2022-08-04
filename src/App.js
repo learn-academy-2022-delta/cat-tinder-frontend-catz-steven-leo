@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css'
 import cats from './mockCats';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -10,30 +11,34 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-export class App extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-          cats: cats
-        }
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      cats: cats
     }
+  }
+
+
   render() {
-    console.log(this.state.cats)
-    return (
-      <>
+    return(
       <Router>
         <Header />
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/catedit" component={CatEdit} />
-                <Route path="/catindex" component={CatIndex} />
-                <Route path="/catnew" component={CatNew} />
-                <Route path="/catshow" component={CatShow} />
-                <Route component={NotFound}/>
-            </Switch>
+        <Switch>
+          <Route exact path="/" component={Home}  />
+          <Route path="/catedit" component ={CatEdit} />
+          <Route path="/catindex" render={() => <CatIndex cats={this.state.cats} />} />
+          <Route path="/catnew" component ={CatNew} />
+          <Route path="/catshow/:id" render={(props) => {
+            let id = +props.match.params.id
+            let cat = this.state.cats.find(catObject => catObject.id === id)
+            return <CatShow cat={cat}/>
+          }} />
+          <Route component={NotFound} />
+        </Switch>
         <Footer />
-    </Router>
-      </>
+      </Router>
+     
     )
   }
 }

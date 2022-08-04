@@ -14,28 +14,6 @@ import App from './App'
 Enzyme.configure({adapter: new Adapter()})
 
 
-// describe("When App renders", ()=> {
-//   it("displays a Header and a Footer", ()=> {
-//     //set a variable to hold a component call
-//     const renderedApp = shallow(<App/>)
-//     //use enzyme .find to find the selector and set to a variable
-//     const renderedHeader = renderedApp.find("Header")
-//     //test that the selector is a certain length
-//     expect(renderedHeader.length).toEqual(1)
-
-//     const renderedFooter = renderedApp.find("Footer")
-//     expect(renderedFooter.length).toEqual(1)
-
-//   })
-
-//   it("provides a route of '/' to the home component", ()=> {
-//     const renderedApp = shallow(<App/>)
-
-//     const renderedHomeRoute = renderedApp.find("[path='/']")
-//     expect (renderedHomeRoute.length).toEqual(1)
-//   })
-// })
-
 describe("When App renders", ()=> {
   
   let renderedApp

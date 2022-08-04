@@ -3,7 +3,11 @@ import { Component } from 'react'
 export class NotFound extends Component {
   render() {
     return (
-      <h1>NotFound</h1>
+      <div className="page-body">
+        <h3>Ooops, no cats here!</h3>
+        <br />
+        {/* <img src={notCat} alt="little dog in a knit hat" className="cat-friend" /> */}
+      </div>
     )
   }
 }

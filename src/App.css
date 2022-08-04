@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Papyrus';
+  font-Weight: 'bold';
+  font-size: 20px;
+}
+.page-body {
+  text-align: center;
+  margin: 3rem;
+  height: 110vh;
+}
+
+/* ---FOOTER--- */
+.main-footer{
+  color: gold;
+  background-color: #6CB33F;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* .page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 1vh
+} */
+.content-wrap{
+  flex:1;
+}
+/* ---FORMS--- */
+form {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+input {
+  text-align: center;
+}
+
+/* ---HEADER--- */
+header {
+  background-color: #6CB33F;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-right: 50px;
+}
+/*---Background Picture---*/
+img {
+  max-width: 100%;
+}
+.background-pic {
+  width: 400px
+}
+.main-container {
+  background-image: url("./assets/backgroundimage.jpeg");
+  background-size: cover;
+  padding: 15rem;
+}
+
+

@@ -1,9 +1,16 @@
 import { Component } from 'react'
 
-export class Home extends Component {
+
+class Home extends Component {
   render() {
     return (
-      <h1>Home</h1>
+      <>
+        <h3 style={{textAlign: "center", color:"gold", backgroundColor:"#6CB33F", fontWeight:"bold"}}>Welcome to Jungle</h3>
+          <section className="main-container">
+          </section>
+      
+      </>
+     
     )
   }
 }
