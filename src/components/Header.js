@@ -4,7 +4,15 @@ import { NavLink } from 'react-router-dom'
 
 export class Header extends Component {
   render() {
+    const mystyle = {
+      color: "#FFD700",
+      backgroundColor: "#6CB33F",
+      padding: "10px",
+      fontFamily: "Papyrus",
+      fontWeight: "bold"
+    }
     return (
+
       <header>
         <Nav className="header-nav">
           <NavItem>
@@ -22,6 +30,7 @@ export class Header extends Component {
             </NavItem>
         </Nav>
       </header>
+
     )
   }
 }

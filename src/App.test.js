@@ -36,4 +36,5 @@ describe("When App renders", ()=> {
     const renderedHomeRoute = renderedApp.find("[path='/']")
     expect (renderedHomeRoute.length).toEqual(1)
   })
+
 })
