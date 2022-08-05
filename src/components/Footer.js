@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class Footer extends Component {
+ class Footer extends Component {
   render() {
     return (
       <div className="page-container">
@@ -10,7 +10,7 @@ export class Footer extends Component {
               <div className="row">
                 {/* column1 */}
                 <div className="col">
-                  <h4>HeadQuarters</h4>
+                  <h4>HQ</h4>
                   <ul className="list-unstyled">
                     <li>1-800-CAT-EXOTIC</li>
                     <li>453 Purr Ave</li>

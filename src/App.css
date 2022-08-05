@@ -43,6 +43,10 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.cat-logo {
+  width: 150px;
+  margin-left: 20px;
+}
 .nav-links {
   display: flex;
   flex-direction: row;
@@ -61,5 +65,3 @@ img {
   background-size: cover;
   padding: 15rem;
 }
-
-
