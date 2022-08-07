@@ -1,15 +1,24 @@
-import { Component } from 'react'
+import { Component } from "react";
+import lions from "../assets/lions.jpeg";
 
-export class NotFound extends Component {
+class NotFound extends Component {
   render() {
+    const backgroundImageURL = "https://i.imgur.com/weOsraX.jpg";
+    const containerStyle = {
+      backgroundImage: `url(${backgroundImageURL})`,
+      width: "1500px",
+      height: "1500px",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    };
     return (
-      <div className="page-body">
-        <h3>Ooops, no cats here!</h3>
-        <br />
-        {/* <img src={notCat} alt="little dog in a knit hat" className="cat-friend" /> */}
+      <div style={containerStyle}>
+        <h1 style={{ color: "gold", textAlign: "center", padding: "50px" }}>
+          Find your way back to Jungle...
+        </h1>
       </div>
-    )
+    );
   }
 }
 
-export default NotFound
+export default NotFound;
