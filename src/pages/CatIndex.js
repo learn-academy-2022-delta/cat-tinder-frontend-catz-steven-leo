@@ -1,21 +1,34 @@
-import { Component } from 'react'
-import { Card, CardImg, CardBody,
-  CardTitle, Button, Row, Col } from 'reactstrap';
-import { NavLink } from 'react-router-dom'
+import { Component } from "react";
+import {
+  Card,
+  CardImg,
+  CardBody,
+  CardTitle,
+  Button,
+  Row,
+  Col,
+} from "reactstrap";
+import { NavLink } from "react-router-dom";
 
 class CatIndex extends Component {
   render() {
     return (
       <>
         <div className="page-body">
-          <h2 className='center-heading'>Find your purrfect match</h2>
+          <h2 className="center-heading">Find your purrfect match</h2>
           <div className="index-cards">
             <Row>
-              {this.props.cats && this.props.cats.map(cat => {
-                return(
-                  <Col sm={4}>
+              {this.props.cats &&
+                this.props.cats.map((cat) => {
+                  return (
+                    <Col sm={4}>
                       <Card key={cat.id}>
-                        <CardImg top width="100%" src={cat.image} alt="Card image cap" />
+                        <CardImg
+                          top
+                          width="100%"
+                          src={cat.image}
+                          alt="Card image cap"
+                        />
                         <CardBody>
                           <CardTitle>Name: {cat.name}</CardTitle>
                           <NavLink to={`/catshow/${cat.id}`}>
@@ -23,16 +36,15 @@ class CatIndex extends Component {
                           </NavLink>
                         </CardBody>
                       </Card>
-                  </Col>
-                )
-              })}
+                    </Col>
+                  );
+                })}
             </Row>
           </div>
         </div>
       </>
-    )
+    );
   }
 }
 
-
-export default CatIndex
+export default CatIndex;
