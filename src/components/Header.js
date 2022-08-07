@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Nav, NavItem } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
+import catLogo from '../assets/cat-logo.jpeg'
+
 
 export class Header extends Component {
   render() {
@@ -12,20 +14,20 @@ export class Header extends Component {
       fontWeight: "bold"
     }
     return (
-
       <header>
-        <Nav className="header-nav">
-          <NavItem>
-          </NavItem>
+        <Nav className="header-nav-a">
+        <NavLink to="/">
+              <img src={catLogo} alt="logo for Cat Tinder" className="cat-logo" />
+            </NavLink>
             <NavItem>
-              <NavLink to="/catindex" className="nav-link">View Exotic Cats</NavLink>
+              <NavLink to="/catindex" className="nav-link">View Purrtnerships</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/catnew" className="nav-link">Add</NavLink>
+              <NavLink to="/catnew" className="nav-link">Join Now!</NavLink>
             </NavItem>
             <NavItem>
-              <a target="blank" href="https://pethelpful.com/exotic-pets/small-exotic-cats" className="nav-link">
-                Additional Info
+              <a target="blank" href="https://www.safewise.com/blog/how-to-date-online-safely/" className="nav-link">
+                Safe Dating
               </a>
             </NavItem>
         </Nav>

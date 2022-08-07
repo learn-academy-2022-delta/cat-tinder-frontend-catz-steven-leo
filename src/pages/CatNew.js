@@ -9,7 +9,10 @@ import { Redirect } from 'react-router-dom'
             newCat: {
                 name:"",
                 age:"",
-                enjoys:"",
+                status:"",
+                looking_for:"",
+                about_me:"",
+                hobbies:"",
                 image:""
             },
             submitted: false
@@ -49,10 +52,34 @@ import { Redirect } from 'react-router-dom'
                         />
                     </FormGroup>
                     <FormGroup>
-                        <Label for="enjoys">Enjoys</Label>
+                        <Label for="status">Status</Label>
                         <Input
                         type="text"
-                        name="enjoys"
+                        name="status"
+                        onChange={this.handleChange}
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="looking_for">Looking For</Label>
+                        <Input
+                        type="text"
+                        name="looking_for"
+                        onChange={this.handleChange}
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="about_me">About Me</Label>
+                        <Input
+                        type="text"
+                        name="about_me"
+                        onChange={this.handleChange}
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="hobbies">Hobbies</Label>
+                        <Input
+                        type="text"
+                        name="hobbies"
                         onChange={this.handleChange}
                         />
                     </FormGroup>
@@ -67,7 +94,7 @@ import { Redirect } from 'react-router-dom'
                     <Button
                         name="submit"
                         onClick={this.handleSubmit}
-                        >Submit Cat
+                        >Add Profile
                     </Button>
                     { this.state.submitted && <Redirect to="/catindex"/>}
                 </Form>
