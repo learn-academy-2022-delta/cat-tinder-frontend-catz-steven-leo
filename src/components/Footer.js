@@ -7,7 +7,7 @@ class Footer extends Component {
       backgroundColor: "#6CB33F",
       fontFamily: "Papyrus",
       fontWeight: "bold",
-      fontSize: "30px",
+      fontSize: "25px",
     };
     return (
       <div className="page-container">
@@ -17,7 +17,14 @@ class Footer extends Component {
               <div className="row">
                 {/* column1 */}
                 <div className="col">
-                  <h4>HQ</h4>
+                  <h4
+                    style={{
+                      textDecorationLine: "underline",
+                      fontFamily: "Arial",
+                    }}
+                  >
+                    HQ
+                  </h4>
                   <ul className="list-unstyled">
                     <li>1-800-CAT-EXOTIC</li>
                     <li>453 Purr Ave</li>
@@ -26,10 +33,17 @@ class Footer extends Component {
                 </div>
                 {/* column2 */}
                 <div className="col">
-                  <h4>More Info</h4>
+                  <h4
+                    style={{
+                      textDecorationLine: "underline",
+                      fontFamily: "Arial",
+                    }}
+                  >
+                    More Info
+                  </h4>
                   <ul className="list-unstyled">
                     <li>Testimonials</li>
-                    <li>FAQS</li>
+                    <li>FAQs</li>
                     <li>Careers</li>
                     <li>Contact</li>
                   </ul>

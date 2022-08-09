@@ -16,7 +16,7 @@
 .main-footer{
   color: gold;
   background-color: #6CB33F;
-  padding-top: 3em;
+  padding-top: 1em;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -52,7 +52,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding-right: 50px;
+  padding-top: 50px;
 }
 a:link {
   color: red;
@@ -84,7 +84,16 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 15rem;
+  width: 100%;
 }
+/* .main-container2 {
+  font-weight: bolder;
+  font-family: open sans-serif;
+  font-size: 15px;
+  color: #03C04A ;
+  text-align: center; */
+
+
 /* --------- */
 
 .card {
