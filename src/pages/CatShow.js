@@ -39,7 +39,7 @@ class CatShow extends Component {
             <NavLink to={`/catedit/${this.props.cat.id}`}>
               <Button>Update Cat</Button>
             </NavLink>
-            <NavLink to={`/catindex${this.state.isDeleted}`}>
+            <NavLink to={`/catindex`}>
               <Button onClick={() => this.props.deleteCat(cat.id)}>
                 Delete Cat
               </Button>

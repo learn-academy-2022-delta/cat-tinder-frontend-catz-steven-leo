@@ -6,8 +6,8 @@ class NotFound extends Component {
     const backgroundImageURL = "https://i.imgur.com/weOsraX.jpg";
     const containerStyle = {
       backgroundImage: `url(${backgroundImageURL})`,
-      width: "1500px",
-      height: "1500px",
+      width: "1700px",
+      height: "1700px",
       backgroundSize: "cover",
       backgroundPosition: "center",
     };
